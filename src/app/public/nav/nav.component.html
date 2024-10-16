@@ -1,0 +1,29 @@
+@if (!isLoading) {
+    <div class="nav container">
+        @if (page=="search") {
+            <h1>Search All Products</h1>
+            <form (submit)="searchProducts($event)" class="search-form">
+                <button type="submit" class="clickable"><mat-icon>search</mat-icon></button>
+                <input 
+                    type="text" 
+                    [(ngModel)]="searchTerm" 
+                    name="searchTerm" 
+                    placeholder="Search for products"
+                    autocomplete="off">
+            </form>
+        } @else if (page == "nav") {
+            <h1>{{ title }}</h1>
+        }
+        <div class="page-cards">
+            @for (card of cards; track card.id) {
+                <div class="card clickable" (click)="navigate(card.link)">
+                    <h2>{{ card.title }}</h2>
+                    <img [src]="'assets/images/' + card.image + '.jpg'" alt="{{ card.title }}">
+                    <p>{{ card.subtitle }}</p>
+                </div>
+            }
+        </div>
+    </div>
+} @else {
+    <app-loading></app-loading>
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/products": {
+      "name": "/products",
+      "lambdaFunction": "productspublic",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/nav": {
+      "name": "/nav",
+      "lambdaFunction": "navpublic",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

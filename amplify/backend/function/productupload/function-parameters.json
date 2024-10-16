@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "storage": {
+      "TezBuildData": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "TezBuildDataBucket": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

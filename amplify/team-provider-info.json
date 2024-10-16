@@ -1,0 +1,54 @@
+{
+  "master": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tezbuild-master-671f5-authRole",
+      "UnauthRoleArn": "arn:aws:iam::891377136298:role/amplify-tezbuild-master-671f5-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::891377136298:role/amplify-tezbuild-master-671f5-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-tezbuild-master-671f5-deployment",
+      "UnauthRoleName": "amplify-tezbuild-master-671f5-unauthRole",
+      "StackName": "amplify-tezbuild-master-671f5",
+      "StackId": "arn:aws:cloudformation:us-east-1:891377136298:stack/amplify-tezbuild-master-671f5/29f89900-325d-11ef-bd35-0e8f86ebb945",
+      "AmplifyAppId": "d3jp8rf9ifvwqt"
+    },
+    "categories": {
+      "auth": {
+        "tezbuild": {}
+      },
+      "function": {
+        "productspublic": {},
+        "productupload": {},
+        "TezBuildData": {},
+        "TezBuildDataBucket": {}
+      }
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tezbuild-dev-77a35-authRole",
+      "UnauthRoleArn": "arn:aws:iam::891377136298:role/amplify-tezbuild-dev-77a35-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::891377136298:role/amplify-tezbuild-dev-77a35-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-tezbuild-dev-77a35-deployment",
+      "UnauthRoleName": "amplify-tezbuild-dev-77a35-unauthRole",
+      "StackName": "amplify-tezbuild-dev-77a35",
+      "StackId": "arn:aws:cloudformation:us-east-1:891377136298:stack/amplify-tezbuild-dev-77a35/89effc60-3319-11ef-bc78-0affd2bc0531",
+      "AmplifyAppId": "d3jp8rf9ifvwqt"
+    },
+    "categories": {
+      "function": {
+        "productspublic": {},
+        "productupload": {},
+        "contentmanagement": {},
+        "navpublic": {}
+      },
+      "auth": {
+        "tezbuild": {}
+      },
+      "storage": {
+        "TezBuildData": {},
+        "TezBuildDataBucket": {}
+      }
+    }
+  }
+}

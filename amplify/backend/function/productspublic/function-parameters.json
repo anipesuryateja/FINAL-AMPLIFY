@@ -1,0 +1,10 @@
+{
+  "lambdaLayers": [],
+  "permissions": {
+    "storage": {
+      "TezBuildData": [
+        "read"
+      ]
+    }
+  }
+}

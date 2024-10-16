@@ -1,0 +1,20 @@
+@import './app/styles/variables.scss';
+
+body {
+    margin: 0;
+    font-family: $font-family;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.header {
+  background: linear-gradient(to right, $primary-color, $primary-color-light);
+  color: $primary-logo-color;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: $font-family;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.header-text p {
+    margin: 0;
+    color: $secondary-logo-color;
+    font-size: 1rem;
+    font-stretch: condensed;
+    font-weight: bold;
+}

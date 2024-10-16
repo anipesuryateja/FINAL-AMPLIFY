@@ -1,0 +1,48 @@
+{
+  "resourceName": "TezBuildData",
+  "tableName": "TezBuildData",
+  "partitionKey": {
+    "fieldName": "ItemType",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "UniqueId",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "FacilityId",
+      "partitionKey": {
+        "fieldName": "ItemType",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "FacilityId",
+        "fieldType": "string"
+      }
+    },
+    {
+      "name": "SKU",
+      "partitionKey": {
+        "fieldName": "ItemType",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "SKU",
+        "fieldType": "string"
+      }
+    },
+    {
+      "name": "Category",
+      "partitionKey": {
+        "fieldName": "ItemType",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "Category",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}

@@ -1,0 +1,12 @@
+{
+  "resourceName": "TezBuildDataBucket",
+  "policyUUID": "ed7ed7a5",
+  "bucketName": "tezbuilddatabucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

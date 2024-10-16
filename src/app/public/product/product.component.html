@@ -1,0 +1,73 @@
+@if (product && !isLoading) {
+    <div class="product container">
+        <div class="product-header">
+            <h1>{{ product.heading }}</h1>
+            @if (product.subheading != '') {
+                <h2>{{ product.subheading }}</h2>
+            }
+        </div>
+        <div class="product-content">
+            <div class="product-image">
+                <img [src]="'assets/images/' + product.image + '.jpg'" alt="{{ product.heading }}">
+            </div>
+            <div class="product-details">
+                <div class="purchase-quantity">
+                    <button (click)="decrementQuantity()">-</button>
+                    <input type="text" [(ngModel)]="quantity" (ngModelChange)="setQuantity($event || 1)">
+                    <button (click)="incrementQuantity()">+</button>
+                    <button (click)="addToCart()">Add to cart: {{ formatter.format(totalPrice) }}</button>
+                </div>
+                @for (quantityButton of quantityButtons; track quantityButton.message) {
+                    <button class="savingsButton" (click)="setQuantity(quantityButton.quantity)">{{ quantityButton.message }}</button>
+                }
+                @for (selector of selectors; track selector.attrName) {
+                    <div class="selectors">
+                        <p>Select a {{ selector.attrName }}</p>
+                            <div class="buttons">
+                            @for (option of selector.options; track option) {
+                                <button 
+                                    (click)="selectOption(selector, option)" 
+                                    [ngClass]="{'selected': option === selector.selection }">
+                                        {{ selector.optionNames[option]? selector.optionNames[option] : option }}
+                                </button>
+                            }
+                        </div>
+                    </div>
+                }
+                <!-- TODO: eventually have show/hide dropdowns for sections within product-details (description, specsheet, etc) -->
+                @if (product.description) {
+                    <p>{{ product.description }}</p>
+                }
+                <table class="product-attributes">
+                    <tbody>
+                        <tr>
+                            <td>Price per Piece</td>
+                            <td>{{ formatter.format(totalPrice/quantity) }}</td>
+                        </tr>
+                        @for (attr of getTableAttributes(); track attr) {
+                            @if (product[attr[0]]) {
+                                <tr>
+                                    <td>{{ attr[1] }}</td>
+                                    <td>{{ product[attr[0]] }}</td>
+                                </tr>
+                            }
+                        }
+                        <tr>
+                            <td>Available Pack Sizes</td>
+                            <td>{{ packSizesString }}</td>
+                        </tr>
+                        <tr>
+                            <td>SKU</td>
+                            <td>{{ productId.toUpperCase() }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+} @else if (isLoading) {
+    <app-loading></app-loading>
+} @else {
+    <app-not-found></app-not-found>
+}
+  
