@@ -169,33 +169,13 @@
                   "s3:ListBucket"
                 ],
                 "Resource": [
-                  "arn:aws:s3:::ses-email-inbox",
-                  "arn:aws:s3:::ses-email-inbox/*"
+                  "arn:aws:s3:::test-email-receive-test",
+                  "arn:aws:s3:::test-email-receive-test/*"
                 ]
               }
             ]
           }
         }
-      },
-      "S3Bucket": {
-        "Type": "AWS::S3::Bucket",
-        "Properties": {
-          "BucketName": "ses-email-inbox",
-          "NotificationConfiguration": {
-            "LambdaConfigurations": [
-              {
-                "Event": "s3:ObjectCreated:*",
-                "Function": {
-                  "Fn::GetAtt": [
-                    "LambdaFunction",
-                    "Arn"
-                  ]
-                }
-              }
-            ]
-          }
-        },
-        "DependsOn": "LambdaFunction"
       },
       "LambdaInvokePermission": {
         "Type": "AWS::Lambda::Permission",
@@ -205,14 +185,8 @@
             "Ref": "LambdaFunction"
           },
           "Principal": "s3.amazonaws.com",
-          "SourceArn": {
-            "Fn::GetAtt": [
-              "S3Bucket",
-              "Arn"
-            ]
-          }
-        },
-        "DependsOn": "S3Bucket"
+          "SourceArn": "arn:aws:s3:::test-email-receive-test"
+        }
       }
     },
     "Outputs": {
