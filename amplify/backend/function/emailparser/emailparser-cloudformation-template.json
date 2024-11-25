@@ -124,8 +124,7 @@
       },
       "lambdaexecutionpolicy": {
         "DependsOn": [
-          "LambdaExecutionRole",
-          "S3Bucket"
+          "LambdaExecutionRole"
         ],
         "Type": "AWS::IAM::Policy",
         "Properties": {
