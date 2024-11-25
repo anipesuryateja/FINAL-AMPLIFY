@@ -2,7 +2,7 @@
   "providers": [
     "awscloudformation"
   ],
-  "projectName": "TezBuild",
+  "projectName": "Tezbuild",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
@@ -10,8 +10,8 @@
     "config": {
       "SourceDir": "src",
       "DistributionDir": "dist",
-      "BuildCommand": "npm build",
-      "StartCommand": "npm start"
+      "BuildCommand": "npm.cmd run-script build",
+      "StartCommand": "ng serve"
     }
   }
 }

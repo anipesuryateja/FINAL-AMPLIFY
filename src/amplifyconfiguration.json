@@ -3,14 +3,14 @@
   "aws_cloud_logic_custom": [
     {
       "name": "tezbuildpublic",
-      "endpoint": "https://pxtrzz3y9l.execute-api.us-east-1.amazonaws.com/master",
+      "endpoint": "https://809odltpr8.execute-api.us-east-1.amazonaws.com/main",
       "region": "us-east-1"
     }
   ],
-  "aws_cognito_identity_pool_id": "us-east-1:03b7731f-1744-4d02-9608-e799add7c9eb",
+  "aws_cognito_identity_pool_id": "us-east-1:06df7de5-3894-4416-89ac-ac08c17004be",
   "aws_cognito_region": "us-east-1",
-  "aws_user_pools_id": "us-east-1_gtBGEYubZ",
-  "aws_user_pools_web_client_id": "3dmqqgpg85iuo3708i6uo30ql4",
+  "aws_user_pools_id": "us-east-1_ZglYhRjyk",
+  "aws_user_pools_web_client_id": "2gs3eo1010lg3rnjkarvlaqohr",
   "oauth": {},
   "aws_cognito_username_attributes": [],
   "aws_cognito_social_providers": [],
@@ -31,10 +31,10 @@
   "aws_dynamodb_all_tables_region": "us-east-1",
   "aws_dynamodb_table_schemas": [
     {
-      "tableName": "TezBuildData-master",
+      "tableName": "TezBuildData-main",
       "region": "us-east-1"
     }
   ],
-  "aws_user_files_s3_bucket": "tezbuilddatabucket671f5-master",
+  "aws_user_files_s3_bucket": "tezbuilddatabucketc4777-main",
   "aws_user_files_s3_bucket_region": "us-east-1"
 }

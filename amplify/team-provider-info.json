@@ -1,0 +1,42 @@
+{
+  "main": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tezbuild-main-c4777-authRole",
+      "UnauthRoleArn": "arn:aws:iam::324037281461:role/amplify-tezbuild-main-c4777-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::324037281461:role/amplify-tezbuild-main-c4777-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-tezbuild-main-c4777-deployment",
+      "UnauthRoleName": "amplify-tezbuild-main-c4777-unauthRole",
+      "StackName": "amplify-tezbuild-main-c4777",
+      "StackId": "arn:aws:cloudformation:us-east-1:324037281461:stack/amplify-tezbuild-main-c4777/ef34f270-9051-11ef-a763-12dc3c750029",
+      "AmplifyAppId": "d3bbrdw844lgw"
+    },
+    "categories": {
+      "auth": {
+        "tezbuild": {}
+      },
+      "function": {
+        "contentmanagement": {
+          "deploymentBucketName": "amplify-tezbuild-main-c4777-deployment",
+          "s3Key": "amplify-builds/contentmanagement-46506c654f2f33543542-build.zip"
+        },
+        "navpublic": {
+          "deploymentBucketName": "amplify-tezbuild-main-c4777-deployment",
+          "s3Key": "amplify-builds/navpublic-496e6731373646584478-build.zip"
+        },
+        "productspublic": {
+          "deploymentBucketName": "amplify-tezbuild-main-c4777-deployment",
+          "s3Key": "amplify-builds/productspublic-476e396f4f3550556d5a-build.zip"
+        },
+        "productupload": {
+          "deploymentBucketName": "amplify-tezbuild-main-c4777-deployment",
+          "s3Key": "amplify-builds/productupload-72357633325135367750-build.zip"
+        }
+      },
+      "storage": {
+        "TezBuildData": {},
+        "TezBuildDataBucket": {}
+      }
+    }
+  }
+}
