@@ -169,8 +169,8 @@
                   "s3:ListBucket"
                 ],
                 "Resource": [
-                  "arn:aws:s3:::ses-email-receiving-inbox",
-                  "arn:aws:s3:::ses-email-receiving-inbox/*"
+                  "arn:aws:s3:::ses-email-inbox",
+                  "arn:aws:s3:::ses-email-inbox/*"
                 ]
               }
             ]
@@ -180,7 +180,7 @@
       "S3Bucket": {
         "Type": "AWS::S3::Bucket",
         "Properties": {
-          "BucketName": "ses-email-receiving-inbox",
+          "BucketName": "ses-email-inbox",
           "NotificationConfiguration": {
             "LambdaConfigurations": [
               {
