@@ -7,11 +7,6 @@ verify_ssl = true
 
 [packages]
 src = {editable = true, path = "./src"}
-beautifulsoup4 = "4.12.3"
-lxml = "5.3.0"
-soupsieve = "2.6"
-setuptools = "41.2.0"
-pip = "19.2.3"
 
 [requires]
 python_version = "3.8"
