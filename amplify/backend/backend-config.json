@@ -134,6 +134,72 @@
       "service": "Lambda"
     }
   },
+  "parameters": {
+    "AMPLIFY_function_contentmanagement_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contentmanagement"
+        }
+      ]
+    },
+    "AMPLIFY_function_contentmanagement_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contentmanagement"
+        }
+      ]
+    },
+    "AMPLIFY_function_navpublic_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "navpublic"
+        }
+      ]
+    },
+    "AMPLIFY_function_navpublic_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "navpublic"
+        }
+      ]
+    },
+    "AMPLIFY_function_productspublic_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "productspublic"
+        }
+      ]
+    },
+    "AMPLIFY_function_productspublic_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "productspublic"
+        }
+      ]
+    },
+    "AMPLIFY_function_productupload_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "productupload"
+        }
+      ]
+    },
+    "AMPLIFY_function_productupload_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "productupload"
+        }
+      ]
+    }
+  },
   "storage": {
     "TezBuildData": {
       "providerPlugin": "awscloudformation",

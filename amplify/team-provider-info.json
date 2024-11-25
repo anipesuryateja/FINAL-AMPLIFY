@@ -31,7 +31,8 @@
         "productupload": {
           "deploymentBucketName": "amplify-tezbuild-main-c4777-deployment",
           "s3Key": "amplify-builds/productupload-72357633325135367750-build.zip"
-        }
+        },
+        "emailparser": {}
       },
       "storage": {
         "TezBuildData": {},
