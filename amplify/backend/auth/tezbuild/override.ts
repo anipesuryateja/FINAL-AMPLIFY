@@ -6,7 +6,7 @@ export function override(resources: AmplifyAuthCognitoStackTemplate) {
         developerOnlyAttribute: false,
         mutable: true,
         name: 'Role',
-        required: true,
+        required: false,
     }
     resources.userPool.schema = [
         ...(resources.userPool.schema as any[]), // Carry over existing attributes (example: email)
