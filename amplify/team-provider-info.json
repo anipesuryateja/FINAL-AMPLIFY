@@ -12,9 +12,6 @@
       "AmplifyAppId": "d3bbrdw844lgw"
     },
     "categories": {
-      "auth": {
-        "tezbuild": {}
-      },
       "function": {
         "contentmanagement": {
           "deploymentBucketName": "amplify-tezbuild-main-c4777-deployment",
